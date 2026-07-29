@@ -122,7 +122,7 @@ export default function ShopGrid() {
       style={{ background: '#FAF8F5' }}
     >
       <div className="mx-auto max-w-[1600px] border-x border-border-warm">
-        <div className="px-5 py-12 sm:px-7 sm:py-14 lg:px-[clamp(32px,4vw,80px)] lg:py-[clamp(56px,7vh,88px)]">
+        <div className="px-5 pt-20 pb-20 sm:px-7 sm:pt-24 sm:pb-24 lg:px-[clamp(32px,4vw,80px)] lg:pt-[clamp(96px,12vh,144px)] lg:pb-[clamp(96px,12vh,144px)]">
           {/* ── Section header — mirrors FeaturedCollection ───── */}
           <Reveal>
             <div className="grid gap-8 lg:grid-cols-2 lg:items-end lg:gap-[clamp(48px,6vw,120px)]">
@@ -147,13 +147,10 @@ export default function ShopGrid() {
                   to="#"
                   className="group mt-6 inline-flex items-center gap-3 font-ui text-[10px] font-medium uppercase tracking-[0.28em] text-near-black"
                 >
-                  <span className="border-b border-near-black/70 pb-1 transition-colors group-hover:border-near-black">
+                  <span className="border-b border-near-black/70 pb-1 group-hover:border-near-black">
                     View Full Collection
                   </span>
-                  <span
-                    aria-hidden="true"
-                    className="text-[12px] transition-transform duration-300 group-hover:translate-x-1"
-                  >
+                  <span aria-hidden="true" className="text-[12px]">
                     →
                   </span>
                 </Link>
@@ -174,7 +171,7 @@ export default function ShopGrid() {
                     key={cat.id}
                     type="button"
                     className={[
-                      'inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 font-ui text-[9px] font-medium uppercase tracking-[0.28em] transition-colors sm:text-[10px]',
+                      'inline-flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 font-ui text-[9px] font-medium uppercase tracking-[0.28em] sm:text-[10px]',
                       cat.active
                         ? 'bg-near-black text-[#FAF8F5]'
                         : 'text-secondary hover:bg-near-black/[0.05] hover:text-near-black',
@@ -206,7 +203,7 @@ export default function ShopGrid() {
                   <span>Sort · Newest</span>
                   <span
                     aria-hidden="true"
-                    className="text-[11px] text-secondary/70 transition-transform duration-300 group-hover:translate-y-0.5"
+                    className="text-[11px] text-secondary/70"
                   >
                     ↓
                   </span>
@@ -277,13 +274,10 @@ export default function ShopGrid() {
 
               <Link
                 to="#"
-                className="group inline-flex min-h-[36px] items-center justify-center gap-3 self-start border border-near-black px-5 py-2 font-ui text-[9px] font-medium uppercase tracking-[0.28em] text-near-black transition-colors hover:bg-near-black hover:text-[#FAF8F5] sm:self-auto sm:text-[10px]"
+                className="group inline-flex min-h-[36px] items-center justify-center gap-3 self-start border border-near-black px-5 py-2 font-ui text-[9px] font-medium uppercase tracking-[0.28em] text-near-black hover:bg-near-black hover:text-[#FAF8F5] sm:self-auto sm:text-[10px]"
               >
                 <span>Shop All</span>
-                <span
-                  aria-hidden="true"
-                  className="text-[12px] transition-transform duration-300 group-hover:translate-x-1"
-                >
+                <span aria-hidden="true" className="text-[12px]">
                   →
                 </span>
               </Link>
@@ -312,7 +306,7 @@ function ShopCard({ item, rotationClass }: { item: Item; rotationClass: string }
   return (
     <Link
       to="#"
-      className={`group relative block rounded-[14px] p-2.5 shadow-[0_12px_30px_-14px_rgba(45,35,20,0.22)] transition-all duration-500 ease-out will-change-transform hover:z-10 hover:-translate-y-1.5 hover:rotate-0 hover:shadow-[0_18px_44px_-16px_rgba(45,35,20,0.30)] ${item.tint} ${rotationClass}`}
+      className={`group relative block rounded-[14px] p-2.5 shadow-[0_12px_30px_-14px_rgba(45,35,20,0.22)] will-change-transform hover:z-10 hover:-translate-y-1.5 hover:rotate-0 hover:shadow-[0_18px_44px_-16px_rgba(45,35,20,0.30)] ${item.tint} ${rotationClass}`}
     >
       {/* Badge */}
       {item.badge && (
@@ -328,7 +322,7 @@ function ShopCard({ item, rotationClass }: { item: Item; rotationClass: string }
           alt={item.title}
           loading="lazy"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
+          className="absolute inset-0 h-full w-full object-cover group-hover:scale-[1.05]"
         />
       </div>
 
