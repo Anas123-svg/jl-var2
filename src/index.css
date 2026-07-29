@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-white text-near-black;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-near-black text-warm-white;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 4px;
+  }
+
+  a,
+  button,
+  input {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+@layer components {
+  .label {
+    @apply text-[12px] font-medium uppercase tracking-label text-secondary;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  }
+
+  .meta {
+    @apply text-[15px] font-medium uppercase tracking-meta text-secondary;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  }
+
+  .caption {
+    @apply text-[14px] leading-5 text-secondary;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bodoni Moda', 'Bodoni 72', Didot, 'Times New Roman', serif;
+  }
+
+  .font-ui,
+  .font-body {
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
