@@ -6,17 +6,17 @@
 import { Link } from 'react-router-dom'
 
 const exploreLinks = [
-  { label: 'Exhibitions', to: '/events' },
-  { label: 'The Shop', to: '/shop' },
-  { label: 'Press & Journals', to: '/press' },
-  { label: 'About the Studio', to: '/about' },
+  { label: 'Exhibitions', to: '#' },
+  { label: 'The Shop', to: '#' },
+  { label: 'Press & Journals', to: '#' },
+  { label: 'About the Studio', to: '#' },
 ]
 
 const resourceLinks = [
-  { label: 'Shipping & Returns', to: '/shipping' },
-  { label: 'Privacy Policy', to: '/privacy' },
-  { label: 'Terms of Sale', to: '/terms' },
-  { label: 'FAQ', to: '/faq' },
+  { label: 'Shipping & Returns', to: '#' },
+  { label: 'Privacy Policy', to: '#' },
+  { label: 'Terms of Sale', to: '#' },
+  { label: 'FAQ', to: '#' },
 ]
 
 const socials = [

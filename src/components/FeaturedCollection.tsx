@@ -12,7 +12,7 @@ const pieces = [
     caption: 'Archival pigment prints · Spring 2026',
     description:
       'A new suite of large-format prints exploring surface, repetition and the weight of colour.',
-    to: '/shop',
+    to: '#',
     image:
       'https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1400&q=90',
   },
@@ -23,7 +23,7 @@ const pieces = [
     caption: 'Untitled No. 7 · London, 2026',
     description:
       'Works made over a single winter — shadow, memory and transformation held in one frame.',
-    to: '/press',
+    to: '#',
     image:
       'https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1400&q=90',
   },
@@ -34,7 +34,7 @@ const pieces = [
     caption: 'Silver gelatin print · 2025',
     description:
       'Darkroom studies in exposure and absence, printed by hand in small editions.',
-    to: '/shop',
+    to: '#',
     image:
       'https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?auto=format&fit=crop&w=1400&q=90',
   },
@@ -45,7 +45,7 @@ const pieces = [
     caption: 'Mixed media on paper · 2026',
     description:
       'Fragments and works on paper drawn from the studio archive, shown here for the first time.',
-    to: '/shop',
+    to: '#',
     image:
       'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1400&q=90',
   },
@@ -79,7 +79,7 @@ export default function FeaturedCollection() {
             </p>
 
             <Link
-              to="/shop"
+              to="#"
               className="group mt-6 inline-flex items-center gap-3 font-ui text-[10px] font-medium uppercase tracking-[0.28em] text-near-black"
             >
               <span className="border-b border-near-black/70 pb-1 transition-colors group-hover:border-near-black">

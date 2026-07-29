@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="mx-auto grid h-full max-w-[1600px] border-x border-[#E7E2DC] lg:grid-cols-[1fr_minmax(360px,0.8fr)_1fr]">
         {/* Left image panel */}
         <Link
-          to="/shop"
+          to="#"
           className="group relative min-h-[420px] overflow-hidden border-b border-[#E7E2DC] lg:min-h-0 lg:border-b-0 lg:border-r"
         >
           <img
@@ -58,7 +58,7 @@ export default function Hero() {
             </p>
 
             <Link
-              to="/press"
+              to="#"
               className="group mt-8 inline-flex items-center gap-4 border-b border-[#1A1A1A]/70 pb-2 font-ui text-[10px] font-medium uppercase tracking-[0.28em] text-[#1A1A1A] transition-colors hover:border-[#1A1A1A]"
             >
               <span>Read Article</span>
@@ -70,7 +70,7 @@ export default function Hero() {
           </div>
 
           <div className="grid grid-cols-3 border-t border-[#E7E2DC] pt-5">
-            <Link to="/shop" className="group border-r border-[#E7E2DC] pr-4">
+            <Link to="#" className="group border-r border-[#E7E2DC] pr-4">
               <span className="font-ui text-[9px] font-medium uppercase tracking-[0.28em] text-[#999590]">
                 Shop
               </span>
@@ -80,7 +80,7 @@ export default function Hero() {
               </span>
             </Link>
 
-            <Link to="/events" className="group border-r border-[#E7E2DC] px-4">
+            <Link to="#" className="group border-r border-[#E7E2DC] px-4">
               <span className="font-ui text-[9px] font-medium uppercase tracking-[0.28em] text-[#999590]">
                 Events
               </span>
@@ -90,7 +90,7 @@ export default function Hero() {
               </span>
             </Link>
 
-            <Link to="/socials" className="group pl-4">
+            <Link to="#" className="group pl-4">
               <span className="font-ui text-[9px] font-medium uppercase tracking-[0.28em] text-[#999590]">
                 Socials
               </span>
@@ -104,7 +104,7 @@ export default function Hero() {
 
         {/* Right image panel */}
         <Link
-          to="/events"
+          to="#"
           className="group relative min-h-[420px] overflow-hidden border-t border-[#E7E2DC] lg:min-h-0 lg:border-l lg:border-t-0"
         >
           <img

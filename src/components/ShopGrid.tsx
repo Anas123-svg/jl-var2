@@ -144,7 +144,7 @@ export default function ShopGrid() {
                 </p>
 
                 <Link
-                  to="/shop"
+                  to="#"
                   className="group mt-6 inline-flex items-center gap-3 font-ui text-[10px] font-medium uppercase tracking-[0.28em] text-near-black"
                 >
                   <span className="border-b border-near-black/70 pb-1 transition-colors group-hover:border-near-black">
@@ -276,7 +276,7 @@ export default function ShopGrid() {
               </div>
 
               <Link
-                to="/shop"
+                to="#"
                 className="group inline-flex min-h-[36px] items-center justify-center gap-3 self-start border border-near-black px-5 py-2 font-ui text-[9px] font-medium uppercase tracking-[0.28em] text-near-black transition-colors hover:bg-near-black hover:text-[#FAF8F5] sm:self-auto sm:text-[10px]"
               >
                 <span>Shop All</span>
@@ -311,7 +311,7 @@ type Item = {
 function ShopCard({ item, rotationClass }: { item: Item; rotationClass: string }) {
   return (
     <Link
-      to="/shop"
+      to="#"
       className={`group relative block rounded-[14px] p-2.5 shadow-[0_12px_30px_-14px_rgba(45,35,20,0.22)] transition-all duration-500 ease-out will-change-transform hover:z-10 hover:-translate-y-1.5 hover:rotate-0 hover:shadow-[0_18px_44px_-16px_rgba(45,35,20,0.30)] ${item.tint} ${rotationClass}`}
     >
       {/* Badge */}

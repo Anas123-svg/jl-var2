@@ -20,17 +20,11 @@ export default function Header() {
     }`
 
   const renderDesktopLink = (item: (typeof nav)[number]) => (
-    <NavLink key={item.to} to={item.to} className={linkClasses}>
-      {({ isActive }) => (
-        <>
-          {item.label}
-          <span
-            className={`absolute -bottom-[6px] left-0 h-px bg-[#1A1A1A] transition-all duration-300 ${
-              isActive ? 'w-full' : 'w-0 group-hover:w-full'
-            }`}
-          />
-        </>
-      )}
+    <NavLink key={item.to} to="#" className={() => linkClasses({ isActive: false })}>
+      <>
+        {item.label}
+        <span className="absolute -bottom-[6px] left-0 h-px w-0 bg-[#1A1A1A] transition-all duration-300 group-hover:w-full" />
+      </>
     </NavLink>
   )
 
@@ -40,7 +34,7 @@ export default function Header() {
         {/* Mobile: brand left, hamburger right */}
         <div className="flex w-full items-center justify-between lg:hidden">
           <Link
-            to="/"
+            to="#"
             onClick={() => setMenuOpen(false)}
             className="font-display text-[22px] uppercase leading-none tracking-[0.2em] text-[#1A1A1A]"
           >
@@ -75,7 +69,7 @@ export default function Header() {
 
           <div className="flex justify-center px-12">
             <Link
-              to="/"
+              to="#"
               className="font-display text-[26px] uppercase leading-none tracking-[0.2em] text-[#1A1A1A]"
             >
               {brand.name}
@@ -100,13 +94,9 @@ export default function Header() {
           {nav.map((item, index) => (
             <NavLink
               key={item.to}
-              to={item.to}
+              to="#"
               onClick={() => setMenuOpen(false)}
-              className={({ isActive }) =>
-                `flex items-center justify-between border-b border-[#E7E2DC] py-4 font-ui text-[11px] font-medium uppercase tracking-[0.28em] last:border-b-0 ${
-                  isActive ? 'text-[#1A1A1A]' : 'text-[#666666]'
-                }`
-              }
+              className="flex items-center justify-between border-b border-[#E7E2DC] py-4 font-ui text-[11px] font-medium uppercase tracking-[0.28em] text-[#666666] last:border-b-0"
             >
               <span>{item.label}</span>
               <span className="font-body text-[13px] italic tracking-normal text-[#B0AAA2]">

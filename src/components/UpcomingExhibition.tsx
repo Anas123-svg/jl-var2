@@ -58,7 +58,7 @@ export default function UpcomingExhibition() {
             </div>
 
             <Link
-              to="/events"
+              to="#"
               className="mt-9 inline-flex items-center gap-4 border border-near-black px-6 py-3 font-ui text-[10px] font-medium uppercase tracking-[0.3em] text-near-black hover:bg-near-black hover:text-warm-white sm:text-[11px]"
             >
               View Details
