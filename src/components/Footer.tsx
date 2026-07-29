@@ -80,10 +80,10 @@ export default function Footer() {
               {/* Brand block */}
               <div>
                 <p className="font-display text-[clamp(26px,2.4vw,38px)] uppercase leading-none tracking-[0.06em] text-white">
-                  Lorek
-                  <span className="italic normal-case tracking-normal text-white/50">
+                  Jacob Lorek
+                  {/* <span className="italic normal-case tracking-normal text-white/50">
                     {' '}Studio
-                  </span>
+                  </span> */}
                 </p>
 
                 <p className="mt-4 max-w-[340px] font-body text-[13px] leading-[1.7] text-white/55 sm:text-[14px]">
